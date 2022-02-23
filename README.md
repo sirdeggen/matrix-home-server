@@ -26,6 +26,16 @@ Lines 36 and 57 of `./config/dendrite.yaml` you should replace YOURDOMAIN with w
 
 #### 7. Create matrix keys
 
+Make sure you're in the conifg folder of your cloneds repo, then run:
+
+```bash
+docker run --rm --entrypoint="" -v $(pwd):/mnt matrixdotorg/dendrite-monolith:latest \
+   /usr/bin/generate-keys \
+   -private-key /mnt/matrix_key.pem \
+   -tls-cert /mnt/server.crt \
+   -tls-key /mnt/server.key
+```
+
 #### 8. Run the Docker Images
 
 ```bash
