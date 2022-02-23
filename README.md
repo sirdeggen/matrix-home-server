@@ -24,6 +24,12 @@ Lines 36 and 57 of `./config/dendrite.yaml` you should replace YOURDOMAIN with w
 
 #### 6. SSL certificate creation with certbot
 
+Install and use certbot
+```bash
+sudo apt install certbot python3-certbot-nginx
+certbot --nginx -d matrix.YOURDOMAIN.com
+```
+
 #### 7. Create matrix keys
 
 Make sure you're in the conifg folder of your cloneds repo, then run:
