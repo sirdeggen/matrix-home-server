@@ -33,7 +33,7 @@ version: 2
 # Global Matrix configuration. This configuration applies to all components.
 global:
   # The domain name of this homeserver.
-  server_name: matrix.kschw.com
+  server_name: matrix.YOURDOMAIN.com
 
   # The path to the signing private key file, used to sign requests and events.
   private_key: matrix_key.pem
@@ -54,7 +54,7 @@ global:
 
   # The server name to delegate server-server communications to, with optional port
   # e.g. localhost:443
-  well_known_server_name: "matrix.kschw.com:443"
+  well_known_server_name: "matrix.YOURDOMAIN.com:443"
 
   # Lists of domains that the server will trust as identity servers to verify third
   # party identifiers such as phone numbers and email addresses.
