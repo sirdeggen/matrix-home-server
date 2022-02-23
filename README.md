@@ -43,7 +43,7 @@ server {
     location /.well-known/matrix/client {
         # If your sever_name here doesn't match your matrix homeserver URL
         # (e.g. hostname.com as server_name and matrix.hostname.com as homeserver URL)
-        add_header Access-Control-Allow-Origin '*';
+        # add_header Access-Control-Allow-Origin '*';
         return 200 '{ "m.homeserver": { "base_url": "https://matrix.YOURDOMAIN.com" } }';
     }
 
